@@ -27,6 +27,7 @@
         this._defaults = defaults;
         this._name = pluginName;
 
+        console.log(this.options.locale);
         this.setLocale(this.options.locale);
 
         this.init();
@@ -182,8 +183,7 @@
                 .append(this[this.dateElementsOrder[0].charAt(0)])
                 .append(this[this.dateElementsOrder[1].charAt(0)])
                 .append(this[this.dateElementsOrder[2].charAt(0)])
-                .appendTo(document.body)
-                .addClass('widget-date--active');
+                .appendTo(document.body);
 
             return this;
         },
@@ -208,9 +208,7 @@
                 'left': offset.left + 'px',
                 'width': this.$el.width() +
                     parseInt(this.$el.css('paddingLeft')) +
-                    parseInt(this.$el.css('paddingRight')) +
-                    parseInt(this.$el.css('borderLeftWidth')) +
-                    parseInt(this.$el.css('borderRightWidth')) + 'px',
+                    parseInt(this.$el.css('paddingRight')) + 'px',
                 'top': offset.top + this.$el.height() +
                     parseInt(this.$el.css('borderTopWidth')) +
                     parseInt(this.$el.css('borderBottomWidth')) + 'px'
@@ -230,7 +228,9 @@
         setLocale: function (locale) {
             this.options.locale = locale;
             moment.locale(locale);
+            console.log('moment locale set', moment.locale());
             this.dateElementsOrder = moment.localeData().longDateFormat('LL').split(' ');
+            console.log('moment locale set', locale, this.options.locale, moment.locale(), this.dateElementsOrder);
         },
         
         getDate: function () {
