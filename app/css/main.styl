@@ -1,0 +1,37 @@
+@import "_normalize"
+@import "_provided"
+
+.widget-date-wrapper
+  background: #fff
+  position: absolute
+  height: 0
+  margin: 0
+  border: 1px solid #aaa
+  transition: opacity 500ms ease-in, height 500ms ease-in
+  opacity: 0
+  line-height: 24px
+  &.widget-date--active
+    height: 100px
+    opacity: 1
+  
+.widget-date-list
+  margin: 0
+  margin-left: 5px
+  padding: 0
+
+.nano {
+    display: inline-block
+    &.col-day {
+        width: 20%;
+    }
+    &.col-month {
+        width: 55%;
+    }
+    &.col-year {
+        width: 25%;
+    }
+}
+  
+.widget-date-selected
+  font-weight: bold
+  color: #1abc9c

@@ -1,0 +1,25 @@
+{
+  "name": "rolling-date",
+  "description": "A jQuery plugin for date input",
+  "author": "Stanislas Ormières & Julien Pate",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laruiss/rolling-date"
+  },
+  "scripts": {
+    "start": "brunch watch --server",
+    "test": "brunch test"
+  },
+  "dependencies": {
+    "javascript-brunch": ">= 1.0 < 1.8",
+    "coffee-script-brunch": ">= 1.0 < 1.8",
+    "css-brunch": ">= 1.0 < 1.8",
+    "stylus-brunch": ">= 1.0 < 1.8",
+    "uglify-js-brunch": ">= 1.0 < 1.8",
+    "clean-css-brunch": ">= 1.0 < 1.8",
+    "auto-reload-brunch": ">= 1.0 < 1.8",
+    "eco-brunch": ">= 1.0 < 1.8"
+  },
+  "devDependencies": {}
+}
