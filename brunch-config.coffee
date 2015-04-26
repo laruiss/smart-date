@@ -3,14 +3,14 @@ exports.config =
   files:
     javascripts:
       joinTo:
-        'js/rolling-date.js': /^app(\/|\\)(?!templates)/
-        'js/vendor.js': /^(?!app)/
+        'js/vendor.js': /^bower_components\/(jquery|nanoscroller|moment|normalize)/
+        'js/smart-date.js': /^app(\/|\\)(?!(templates))/
     stylesheets:
       joinTo:
-        'css/rolling-date.css': /(?!^app(\/|\\)demo)/
+        'css/smart-date.css': /(?!^app(\/|\\)demo)/
         'css/demo.css': /^app(\/|\\)demo/
     templates:
-      joinTo: 'js/rolling-date.js'
+      joinTo: 'js/smart-date.js'
 
   # clean compiled js file from modules header
   # and wrap it like coffeescript should

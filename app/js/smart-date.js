@@ -1,7 +1,12 @@
-/* global jQuery, window, document */
-(function ($, moment, window, document, undefined) {
+/* global jQuery, moment, window, document */
+;(function(smartDate) {
+
+  	smartDate(jQuery, moment, window, document);
+
+  }(function ($, moment, window, document, undefined) {
     'use strict';
 
+    
     var pluginName = 'widgetDate',
         defaults = {
             locale: 'en',
@@ -255,4 +260,4 @@
         });
     };
 
-})(jQuery, moment, window, document);
+}));
