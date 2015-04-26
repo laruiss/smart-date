@@ -4,7 +4,8 @@ exports.config =
     javascripts:
       joinTo:
         'js/vendor.js': /^bower_components\/(jquery|nanoscroller|moment|normalize)/
-        'js/smart-date.js': /^app(\/|\\)(?!(templates))/
+        'js/smart-date.js': /^app(\/|\\)(?!(templates|amd))/
+        'js/smart-date.amd.js': /^app(\/|\\)(?!(templates))(amd)/
     stylesheets:
       joinTo:
         'css/smart-date.css': /(?!^app(\/|\\)demo)/
