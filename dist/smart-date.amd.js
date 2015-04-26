@@ -1,5 +1,5 @@
 /* global define, window, document */
-;define(['jquery', 'moment'], function ($, moment) {
+;define(['jquery', 'moment', 'nanoscroller'], function ($, moment) {
     'use strict';
     (function(smartDate) {
 
