@@ -1,6 +1,11 @@
 # (Uncommon) date picker jQuery plugin
 
-This is a date picker designed by Julien Pate (http://fr.viadeo.com/fr/profile/julien.pate) for SmartFocus, developed by Stanislas Ormières (@laruiss)
+This is a date picker designed by Julien Pate (@julienpate) for SmartFocus, developed by Stanislas Ormières (@laruiss)
+
+[![Go to demo][2]][1]
+
+  [1]: http://laruiss.github.io/smart-date
+  [2]: smart-date-screenshot.png?raw=true (Click to go demo)
 
 * UI Design : Julien Pate
 * UX Design : Julien Pate / Stanislas Ormières
