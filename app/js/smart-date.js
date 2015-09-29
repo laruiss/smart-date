@@ -7,7 +7,7 @@
     'use strict';
 
     
-    var pluginName = 'widgetDate',
+    var pluginName = 'smartDate',
         defaults = {
             locale: 'en',
         };
