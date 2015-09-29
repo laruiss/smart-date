@@ -251,6 +251,33 @@
     };
 
     $.fn[pluginName] = function (options) {
+        var isString = typeof options === 'string' || options instanceof String;
+        var isSetter = arguments.length === 2;
+        if (isString) {
+            var plugin = this.eq(0).data('plugin_' + pluginName);
+            if (plugin) {
+                if (options == 'date') {
+                    if (!isSetter) {
+                        return plugin.getDate();
+                    }
+                }
+                if (options == 'year') {
+                    if (!isSetter) {
+                        return plugin.getDate().getFullYear();
+                    }
+                }
+                if (options == 'month') {
+                    if (!isSetter) {
+                        return plugin.getDate().getMonth();
+                    }
+                }
+                if (options == 'day') {
+                    if (!isSetter) {
+                        return plugin.getDate().getDate();
+                    }
+                }
+            }
+        }
         return this.each(function () {
             if (!$.data(this, 'plugin_' + pluginName)) {
                 $.data(this, 'plugin_' + pluginName, new Plugin(this, options));
