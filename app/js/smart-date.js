@@ -32,7 +32,6 @@
         this._defaults = defaults;
         this._name = pluginName;
 
-        console.log(this.options.locale);
         this.setLocale(this.options.locale);
 
         this.init();
@@ -234,9 +233,7 @@
         setLocale: function (locale) {
             this.options.locale = locale;
             moment.locale(locale);
-            console.log('moment locale set', moment.locale());
             this.dateElementsOrder = moment.localeData().longDateFormat('LL').split(' ');
-            console.log('moment locale set', locale, this.options.locale, moment.locale(), this.dateElementsOrder);
         },
         
         getDate: function () {
