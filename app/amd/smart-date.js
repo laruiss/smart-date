@@ -200,6 +200,7 @@
                     daysHtml += '<li data-id="' + (i < 10 ? ('0' + i) : i) + '">' + i + '</li>';
                 }
                 this.$daysElement.html(daysHtml);
+                this.checkInput();
             },
 
             hideWrapper: function () {
